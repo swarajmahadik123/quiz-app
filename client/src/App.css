@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f9;
+}
+
+.quiz-start, .quiz-question, .quiz-result {
+    text-align: center;
+}
+
+.quiz-progress {
+    width: 100%;
+    background-color: #ddd;
+    margin-bottom: 20px;
+}
+
+.quiz-progress div {
+    height: 10px;
+    background-color: green;
+}
+
+.quiz-question ul {
+    list-style: none;
+    padding: 0;
+}
+
+.quiz-question li {
+    margin: 10px;
+    padding: 10px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    cursor: pointer;
+}
+
+.quiz-question li.selected {
+    background-color: #d4edda;
+}
